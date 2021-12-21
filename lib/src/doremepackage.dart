@@ -11,7 +11,7 @@ class Doreme extends StatefulWidget {
     required this.fivthwidget,
     required this.sixthwidget,
     required this.seventhwidget,
-  }) : assert(color == null);
+  }) ;
   final Color color;
   final Widget firstwidget;
   final Widget secondwidget;
