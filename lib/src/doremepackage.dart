@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 
 class Doreme extends StatefulWidget {
-  const Doreme({ Key? key,  this.color }) : super(key: key);
+  const Doreme({ Key? key, required this.color }) : super(key: key);
   final Color? color;
 
   @override
