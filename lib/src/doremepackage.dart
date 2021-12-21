@@ -4,56 +4,56 @@ import 'dart:ui';
 class Doreme extends StatefulWidget {
   const Doreme({
     required this.color,
-    required this.firstimage,
-    required this.secondimage,
-    required this.thirdimage,
-    required this.fourthimage,
-    required this.fivthimage,
-    required this.sixthimage,
-    required this.seventhimage,
+    required this.firstwidget,
+    required this.secondwidget,
+    required this.thirdwidget,
+    required this.fourthwidget,
+    required this.fivthwidget,
+    required this.sixthwidget,
+    required this.seventhwidget,
   }) : assert(color == null);
   final Color color;
-  final String firstimage;
-  final String secondimage;
-  final String thirdimage;
-  final String fourthimage;
-  final String fivthimage;
-  final String sixthimage;
-  final String seventhimage;
+  final Widget firstwidget;
+  final Widget secondwidget;
+  final Widget thirdwidget;
+  final Widget fourthwidget;
+  final Widget fivthwidget;
+  final Widget sixthwidget;
+  final Widget seventhwidget;
 
   @override
   // ignore: no_logic_in_create_state
   _DoremeState createState() => _DoremeState(
         color: color,
-        firstimage: firstimage,
-        secondimage: secondimage,
-        thirdimage: thirdimage,
-        fourthimage: fourthimage,
-        fivthimage: fivthimage,
-        sixthimage: sixthimage,
-        seventhimage: seventhimage,
+        firstwidget: firstwidget,
+        secondwidget: secondwidget,
+        thirdwidget: thirdwidget,
+        fourthwidget: fourthwidget,
+        fivthwidget: fivthwidget,
+        sixthwidget: sixthwidget,
+        seventhwidget: seventhwidget,
       );
 }
 
 class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   _DoremeState({
     required this.color,
-    required this.firstimage,
-    required this.secondimage,
-    required this.thirdimage,
-    required this.fourthimage,
-    required this.fivthimage,
-    required this.sixthimage,
-    required this.seventhimage,
+    required this.firstwidget,
+    required this.secondwidget,
+    required this.thirdwidget,
+    required this.fourthwidget,
+    required this.fivthwidget,
+    required this.sixthwidget,
+    required this.seventhwidget,
   });
   final Color color;
-  final String firstimage;
-  final String secondimage;
-  final String thirdimage;
-  final String fourthimage;
-  final String fivthimage;
-  final String sixthimage;
-  final String seventhimage;
+  final Widget firstwidget;
+  final Widget secondwidget;
+  final Widget thirdwidget;
+  final Widget fourthwidget;
+  final Widget fivthwidget;
+  final Widget sixthwidget;
+  final Widget seventhwidget;
 
   bool now = false;
   AnimationController? _controller;
@@ -135,7 +135,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               child: InkWell(
                 onTap: () {},
                 child: Container(
-                  child: Image.asset(firstimage),
+                  child:firstwidget,
                   decoration: BoxDecoration(
                       color: color, borderRadius: BorderRadius.circular(50)),
                   width: 65,
@@ -153,7 +153,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path2).dy,
               left: calculate(_animation!.value, _path2).dx,
               child: Container(
-                child: Image.asset(secondimage),
+                child:secondwidget,
                 decoration: BoxDecoration(
                     color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
@@ -170,7 +170,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path3).dy,
               left: calculate(_animation!.value, _path3).dx,
               child: Container(
-                child: Image.asset(thirdimage),
+                child: thirdwidget,
                 decoration: BoxDecoration(
                     color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
@@ -187,7 +187,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path4).dy,
               left: calculate(_animation!.value, _path4).dx,
               child: Container(
-                child: Image.asset(fourthimage),
+                child:fourthwidget,
                 decoration: BoxDecoration(
                     color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
@@ -204,7 +204,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path5).dy,
               left: calculate(_animation!.value, _path5).dx,
               child: Container(
-                child: Image.asset(fivthimage),
+                child: fivthwidget,
                 decoration: BoxDecoration(
                     color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
@@ -221,7 +221,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path6).dy,
               left: calculate(_animation!.value, _path6).dx,
               child: Container(
-                child: Image.asset(sixthimage),
+                child: sixthwidget,
                 decoration: BoxDecoration(
                     color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
@@ -238,7 +238,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path7).dy,
               left: calculate(_animation!.value, _path7).dx,
               child: Container(
-                child: Image.asset(seventhimage),
+                child: seventhwidget,
                 decoration: BoxDecoration(
                     color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
