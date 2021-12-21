@@ -105,208 +105,198 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
         now = false;
         print("ges");
       },
-      child: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            InkWell(
-              onTap: () {},
-              child: Container(
-                height: double.infinity,
-                width: double.infinity,
-                color: Colors.red,
-              ),
+      child: Stack(
+        children: <Widget>[
+          now == true
+              ? Container(
+                  height: double.infinity,
+                  width: double.infinity,
+                  color: Colors.black.withOpacity(0.3),
+                )
+              : Container(),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path1),
             ),
-            now == true
-                ? Container(
-                    height: double.infinity,
-                    width: double.infinity,
-                    color: Colors.black.withOpacity(0.3),
-                  )
-                : Container(),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path1),
-              ),
-            ),
-            Positioned(
-              top: calculate(_animation!.value, _path1).dy,
-              left: calculate(_animation!.value, _path1).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: firstwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path1).dy,
+            left: calculate(_animation!.value, _path1).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: firstwidget)),
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path2),
-              ),
+          ),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path2),
             ),
-            Positioned(
-              top: calculate(_animation!.value, _path2).dy,
-              left: calculate(_animation!.value, _path2).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: secondwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path2).dy,
+            left: calculate(_animation!.value, _path2).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: secondwidget)),
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path3),
-              ),
+          ),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path3),
             ),
-            Positioned(
-              top: calculate(_animation!.value, _path3).dy,
-              left: calculate(_animation!.value, _path3).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: thirdwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path3).dy,
+            left: calculate(_animation!.value, _path3).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: thirdwidget)),
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path4),
-              ),
+          ),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path4),
             ),
-            Positioned(
-              top: calculate(_animation!.value, _path4).dy,
-              left: calculate(_animation!.value, _path4).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: fourthwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path4).dy,
+            left: calculate(_animation!.value, _path4).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: fourthwidget)),
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path5),
-              ),
+          ),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path5),
             ),
-            Positioned(
-              top: calculate(_animation!.value, _path5).dy,
-              left: calculate(_animation!.value, _path5).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: fivthwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path5).dy,
+            left: calculate(_animation!.value, _path5).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: fivthwidget)),
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path6),
-              ),
+          ),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path6),
             ),
-            Positioned(
-              top: calculate(_animation!.value, _path6).dy,
-              left: calculate(_animation!.value, _path6).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: sixthwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path6).dy,
+            left: calculate(_animation!.value, _path6).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: sixthwidget)),
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              child: CustomPaint(
-                painter: PathPainter(_path7),
-              ),
+          ),
+          Positioned(
+            top: 0,
+            child: CustomPaint(
+              painter: PathPainter(_path7),
             ),
-            Positioned(
-              top: calculate(_animation!.value, _path7).dy,
-              left: calculate(_animation!.value, _path7).dx,
-              child: Container(
-                width: 65,
-                height: 65,
-                decoration: BoxDecoration(
-                    color: color, borderRadius: BorderRadius.circular(50)),
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    child: Center(child: FittedBox(child: seventhwidget)),
-                  ),
+          ),
+          Positioned(
+            top: calculate(_animation!.value, _path7).dy,
+            left: calculate(_animation!.value, _path7).dx,
+            child: Container(
+              width: 65,
+              height: 65,
+              decoration: BoxDecoration(
+                  color: color, borderRadius: BorderRadius.circular(50)),
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  child: Center(child: FittedBox(child: seventhwidget)),
                 ),
               ),
             ),
-            Align(
-                alignment: Alignment.bottomRight,
-                child: StatefulBuilder(
-                    builder: (BuildContext context, StateSetter setState) {
-                  return Container(
-                    margin: const EdgeInsets.only(bottom: 55, right: 55),
-                    width: 65,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    height: 65,
-                    child: InkWell(
-                      onTap: () {
-                        now == false
-                            ? {didUpdateWidget(), now = true}
-                            : {back(), now = false};
-                      },
-                      child: Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: Colors.amber,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
+          ),
+          Align(
+              alignment: Alignment.bottomRight,
+              child: StatefulBuilder(
+                  builder: (BuildContext context, StateSetter setState) {
+                return Container(
+                  margin: const EdgeInsets.only(bottom: 55, right: 55),
+                  width: 65,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  height: 65,
+                  child: InkWell(
+                    onTap: () {
+                      now == false
+                          ? {didUpdateWidget(), now = true}
+                          : {back(), now = false};
+                    },
+                    child: Container(
+                      width: 65,
+                      height: 65,
+                      decoration: BoxDecoration(
+                        color: color,
+                        borderRadius: BorderRadius.circular(50),
                       ),
                     ),
-                  );
-                })),
-          ],
-        ),
+                  ),
+                );
+              })),
+        ],
       ),
     );
   }
