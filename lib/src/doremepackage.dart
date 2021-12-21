@@ -319,14 +319,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
                           ? {didUpdateWidget(), now = true}
                           : {back(), now = false};
                     },
-                    child: Container(
-                      width: 65,
-                      height: 65,
-                      decoration: BoxDecoration(
-                        color: color,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),
+                    
                   ),
                 );
               })),
