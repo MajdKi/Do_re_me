@@ -132,17 +132,15 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
             Positioned(
               top: calculate(_animation!.value, _path1).dy,
               left: calculate(_animation!.value, _path1).dx,
-              child:  Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+              child: Container(
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: firstwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
@@ -157,16 +155,14 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               top: calculate(_animation!.value, _path2).dy,
               left: calculate(_animation!.value, _path2).dx,
               child: Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: secondwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
@@ -180,17 +176,15 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
             Positioned(
               top: calculate(_animation!.value, _path3).dy,
               left: calculate(_animation!.value, _path3).dx,
-              child:  Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+              child: Container(
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: thirdwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
@@ -204,17 +198,15 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
             Positioned(
               top: calculate(_animation!.value, _path4).dy,
               left: calculate(_animation!.value, _path4).dx,
-              child:  Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+              child: Container(
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: fourthwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
@@ -228,17 +220,15 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
             Positioned(
               top: calculate(_animation!.value, _path5).dy,
               left: calculate(_animation!.value, _path5).dx,
-              child:  Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+              child: Container(
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: fivthwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
@@ -252,17 +242,15 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
             Positioned(
               top: calculate(_animation!.value, _path6).dy,
               left: calculate(_animation!.value, _path6).dx,
-              child:  Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+              child: Container(
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: sixthwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
@@ -276,17 +264,15 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
             Positioned(
               top: calculate(_animation!.value, _path7).dy,
               left: calculate(_animation!.value, _path7).dx,
-              child:  Container(
-                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(50)),
+              child: Container(
+                width: 65,
+                height: 65,
+                decoration: BoxDecoration(
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
                     child: Center(child: FittedBox(child: seventhwidget)),
-                   
-                        color: color,
-                    width: 65,
-                    height: 65,
                   ),
                 ),
               ),
