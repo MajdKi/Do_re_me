@@ -2,18 +2,60 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 
 class Doreme extends StatefulWidget {
-  const Doreme({ required this.color }) : assert(color == null);
+  const Doreme({
+    required this.color,
+    required this.firstimage,
+    required this.secondimage,
+    required this.thirdimage,
+    required this.fourthimage,
+    required this.fivthimage,
+    required this.sixthimage,
+    required this.seventhimage,
+  }) : assert(color == null);
   final Color color;
+  final String firstimage;
+  final String secondimage;
+  final String thirdimage;
+  final String fourthimage;
+  final String fivthimage;
+  final String sixthimage;
+  final String seventhimage;
 
   @override
-  _DoremeState createState() => _DoremeState(color: color);
+  // ignore: no_logic_in_create_state
+  _DoremeState createState() => _DoremeState(
+        color: color,
+        firstimage: firstimage,
+        secondimage: secondimage,
+        thirdimage: thirdimage,
+        fourthimage: fourthimage,
+        fivthimage: fivthimage,
+        sixthimage: sixthimage,
+        seventhimage: seventhimage,
+      );
 }
 
-class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
-   _DoremeState({required this.color});
-   final Color color;
+class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
+  _DoremeState({
+    required this.color,
+    required this.firstimage,
+    required this.secondimage,
+    required this.thirdimage,
+    required this.fourthimage,
+    required this.fivthimage,
+    required this.sixthimage,
+    required this.seventhimage,
+  });
+  final Color color;
+  final String firstimage;
+  final String secondimage;
+  final String thirdimage;
+  final String fourthimage;
+  final String fivthimage;
+  final String sixthimage;
+  final String seventhimage;
 
-       bool now = false;
+  bool now = false;
   AnimationController? _controller;
   Animation? _animation;
   late Path _path1;
@@ -93,10 +135,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               child: InkWell(
                 onTap: () {},
                 child: Container(
-                  child: Image.asset("assets/ic_black_hours.png"),
+                  child: Image.asset(firstimage),
                   decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.circular(50)),
+                      color: color, borderRadius: BorderRadius.circular(50)),
                   width: 65,
                   height: 65,
                 ),
@@ -112,10 +153,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               top: calculate(_animation!.value, _path2).dy,
               left: calculate(_animation!.value, _path2).dx,
               child: Container(
-                child: Image.asset("assets/ic_black_hours.png"),
+                child: Image.asset(secondimage),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
                 height: 65,
               ),
@@ -130,10 +170,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               top: calculate(_animation!.value, _path3).dy,
               left: calculate(_animation!.value, _path3).dx,
               child: Container(
-                child: Image.asset("assets/ic_black_hours.png"),
+                child: Image.asset(thirdimage),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
                 height: 65,
               ),
@@ -148,10 +187,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               top: calculate(_animation!.value, _path4).dy,
               left: calculate(_animation!.value, _path4).dx,
               child: Container(
-                child: Image.asset("assets/ic_black_hours.png"),
+                child: Image.asset(fourthimage),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
                 height: 65,
               ),
@@ -166,10 +204,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               top: calculate(_animation!.value, _path5).dy,
               left: calculate(_animation!.value, _path5).dx,
               child: Container(
-                child: Image.asset("assets/ic_black_hours.png"),
+                child: Image.asset(fivthimage),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
                 height: 65,
               ),
@@ -184,10 +221,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               top: calculate(_animation!.value, _path6).dy,
               left: calculate(_animation!.value, _path6).dx,
               child: Container(
-                child: Image.asset("assets/ic_black_hours.png"),
+                child: Image.asset(sixthimage),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
                 height: 65,
               ),
@@ -202,10 +238,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
               top: calculate(_animation!.value, _path7).dy,
               left: calculate(_animation!.value, _path7).dx,
               child: Container(
-                child: Image.asset("assets/images/ic_black_hours.png"),
+                child: Image.asset(seventhimage),
                 decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(50)),
+                    color: color, borderRadius: BorderRadius.circular(50)),
                 width: 65,
                 height: 65,
               ),
@@ -337,5 +372,4 @@ class PathPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => true;
-    
-  }
+}
