@@ -10,7 +10,13 @@ class Doreme extends StatefulWidget {
     required this.fourthwidget,
     required this.fivthwidget,
     required this.sixthwidget,
-    required this.seventhwidget,
+    required this.seventhwidget,required this.fun1,
+    required this.fun2,
+    required this.fun3,
+    required this.fun4,
+    required this.fun5,
+    required this.fun6,
+    required this.fun7,
   });
   final Color color;
   final Widget firstwidget;
@@ -19,7 +25,13 @@ class Doreme extends StatefulWidget {
   final Widget fourthwidget;
   final Widget fivthwidget;
   final Widget sixthwidget;
-  final Widget seventhwidget;
+  final Widget seventhwidget; final Function fun1;
+  final Function fun2;
+  final Function fun3;
+  final Function fun4;
+  final Function fun5;
+  final Function fun6;
+  final Function fun7;
 
   @override
   // ignore: no_logic_in_create_state
@@ -32,6 +44,13 @@ class Doreme extends StatefulWidget {
         fivthwidget: fivthwidget,
         sixthwidget: sixthwidget,
         seventhwidget: seventhwidget,
+        fun1: fun1,
+        fun2: fun2,
+        fun3: fun3,
+        fun4: fun4,
+        fun5: fun5,
+        fun6: fun6,
+        fun7: fun7,
       );
 }
 
@@ -45,6 +64,13 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
     required this.fivthwidget,
     required this.sixthwidget,
     required this.seventhwidget,
+    required this.fun1,
+    required this.fun2,
+    required this.fun3,
+    required this.fun4,
+    required this.fun5,
+    required this.fun6,
+    required this.fun7,
   });
   final Color color;
   final Widget firstwidget;
@@ -54,6 +80,14 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   final Widget fivthwidget;
   final Widget sixthwidget;
   final Widget seventhwidget;
+  final Function fun1;
+  final Function fun2;
+  final Function fun3;
+  final Function fun4;
+  final Function fun5;
+  final Function fun6;
+  final Function fun7;
+
 
   bool now = false;
   AnimationController? _controller;
@@ -129,7 +163,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun1();},
                 child: Container(
                   child: Center(child: FittedBox(child: firstwidget)),
                 ),
@@ -151,7 +185,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun2();},
                 child: Container(
                   child: Center(child: FittedBox(child: secondwidget)),
                 ),
@@ -173,7 +207,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun3();},
                 child: Container(
                   child: Center(child: FittedBox(child: thirdwidget)),
                 ),
@@ -195,7 +229,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun4();},
                 child: Container(
                   child: Center(child: FittedBox(child: fourthwidget)),
                 ),
@@ -217,7 +251,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun5();},
                 child: Container(
                   child: Center(child: FittedBox(child: fivthwidget)),
                 ),
@@ -239,7 +273,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun6();},
                 child: Container(
                   child: Center(child: FittedBox(child: sixthwidget)),
                 ),
@@ -261,7 +295,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                   color: color, borderRadius: BorderRadius.circular(50)),
               child: InkWell(
-                onTap: () {},
+                onTap: () {fun7();},
                 child: Container(
                   child: Center(child: FittedBox(child: seventhwidget)),
                 ),
