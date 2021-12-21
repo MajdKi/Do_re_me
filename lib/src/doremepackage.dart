@@ -3,15 +3,15 @@ import 'dart:ui';
 
 class Doreme extends StatefulWidget {
   const Doreme({ Key? key, required this.color }) : super(key: key);
-  final Color? color;
+  final Color color;
 
   @override
   _DoremeState createState() => _DoremeState(color: color);
 }
 
 class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin{
-   _DoremeState({this.color});
-   final Color? color;
+   _DoremeState({required this.color});
+   final Color color;
 
        bool now = false;
   AnimationController? _controller;
