@@ -126,6 +126,10 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
     _path6 = drawPath6(width, h);
     _path7 = drawPath7(width, h);
 
+
+
+
+
     void didUpdateWidget() {
       _controller!.forward();
     }
