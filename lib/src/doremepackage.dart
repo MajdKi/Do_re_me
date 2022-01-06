@@ -117,13 +117,14 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double heigth = MediaQuery.of(context).size.height;
-    _path1 = drawPath1(width, heigth);
-    _path2 = drawPath2(width, heigth);
-    _path3 = drawPath3(width, heigth);
-    _path4 = drawPath4(width, heigth);
-    _path5 = drawPath5(width, heigth);
-    _path6 = drawPath6(width, heigth);
-    _path7 = drawPath7(width, heigth);
+     double h = MediaQuery.of(context).padding.bottom;
+    _path1 = drawPath1(width, h);
+    _path2 = drawPath2(width, h);
+    _path3 = drawPath3(width, h);
+    _path4 = drawPath4(width, h);
+    _path5 = drawPath5(width, h);
+    _path6 = drawPath6(width, h);
+    _path7 = drawPath7(width, h);
 
     void didUpdateWidget() {
       _controller!.forward();
@@ -133,6 +134,8 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
       _controller!.reverse();
     }
 
+   
+
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
@@ -140,6 +143,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
         now = false;
         print("ges");
       },
+      
       child: Stack(
         children: <Widget>[
           now == true
