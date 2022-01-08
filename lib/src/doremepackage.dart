@@ -341,7 +341,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               child: StatefulBuilder(
                   builder: (BuildContext context, StateSetter setState) {
                 return Container(
-                  margin: const EdgeInsets.only(bottom: 109, right: 55),
+                  margin: const EdgeInsets.only(bottom: 80, right: 30),
                   width: 65,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
@@ -378,7 +378,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath1(double width, double height) {
     Size size = Size(width,  height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 2 / 3, size.height / 2,
         (size.width * 2 / 6) - 32.5, (size.height * 1 / 3) - 32.5);
     return path;
@@ -387,7 +387,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath2(double width, double height) {
     Size size = Size(width,  height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 1 / 6, size.height * 2 / 3,
         (size.width * 4 / 6) - 32.5, (size.height * 1 / 3) - 32.5);
     return path;
@@ -396,7 +396,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath3(double width, double height) {
     Size size = Size(width,  height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 3 / 4, size.height / 2,
         (size.width * 1 / 6) - 32.5, (size.height * 1 / 2) - 32.5);
     return path;
@@ -405,7 +405,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath4(double width, double height) {
     Size size = Size(width, height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 3 / 4, size.height / 2,
         (size.width * 3 / 6) - 32.5, (size.height * 1 / 2) - 32.5);
     return path;
@@ -414,7 +414,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath5(double width, double height) {
     Size size = Size(width,  height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 9 / 10, size.height / 2,
         (size.width * 5 / 6) - 32.5, (size.height * 1 / 2) - 32.5);
     return path;
@@ -423,7 +423,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath6(double width, double height) {
     Size size = Size(width, height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 3 / 4, size.height / 2,
         (size.width * 2 / 6) - 32.5, (size.height * 2 / 3) - 32.5);
 
@@ -433,7 +433,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   Path drawPath7(double width, double height) {
     Size size = Size(width,  height);
     Path path = Path();
-    path.moveTo(size.width - 120, size.height - 174);
+    path.moveTo(size.width - 95, size.height - 145);
     path.quadraticBezierTo(size.width * 1 / 10, size.height * 9 / 10,
         (size.width * 4 / 6) - 32.5, (size.height * 2 / 3) - 32.5);
     return path;
