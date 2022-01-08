@@ -115,8 +115,8 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    double heigth = MediaQuery.of(context).size.height;
+    double width =double.infinity;
+    double heigth = double.infinity;
      double h = MediaQuery.of(context).padding.bottom;
     _path1 = drawPath1(width, heigth);
     _path2 = drawPath2(width, heigth);
@@ -139,7 +139,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
 
     return GestureDetector(
       onTap: () {
-        FocusScope.of(context).unfocus();
+        FocusScope.of(context).unfocus(
+          
+        );
         back();
       },
       
