@@ -115,8 +115,8 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    double width =double.infinity;
-    double heigth = double.infinity;
+    double width =MediaQuery.of(context).size.width;
+    double heigth = MediaQuery.of(context).size.height;
      double h = MediaQuery.of(context).padding.bottom;
     _path1 = drawPath1(width, heigth);
     _path2 = drawPath2(width, heigth);
