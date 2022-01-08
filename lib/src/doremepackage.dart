@@ -341,7 +341,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
               child: StatefulBuilder(
                   builder: (BuildContext context, StateSetter setState) {
                 return Container(
-                  margin: const EdgeInsets.only(bottom: 55, right: 55),
+                  margin: const EdgeInsets.only(bottom: 109, right: 55),
                   width: 65,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
