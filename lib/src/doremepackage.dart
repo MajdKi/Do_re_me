@@ -18,6 +18,7 @@ class Doreme extends StatefulWidget {
     required this.fun5,
     required this.fun6,
     required this.fun7,
+    required this.icon,
   });
   final Color color;
   final Widget firstwidget;
@@ -34,6 +35,7 @@ class Doreme extends StatefulWidget {
   final Function fun5;
   final Function fun6;
   final Function fun7;
+  final Widget icon;
 
   @override
   // ignore: no_logic_in_create_state
@@ -53,6 +55,7 @@ class Doreme extends StatefulWidget {
         fun5: fun5,
         fun6: fun6,
         fun7: fun7,
+        icon: icon,
       );
 }
 
@@ -73,6 +76,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
     required this.fun5,
     required this.fun6,
     required this.fun7,
+    required this.icon,
   });
   final Color color;
   final Widget firstwidget;
@@ -89,6 +93,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
   final Function fun5;
   final Function fun6;
   final Function fun7;
+  final Widget icon;
 
   bool now = false;
   AnimationController? _controller;
@@ -138,6 +143,7 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
       onTap: () {
         FocusScope.of(context).unfocus();
         back();
+        now = false;
       },
       child: Stack(
         children: <Widget>[
@@ -348,6 +354,9 @@ class _DoremeState extends State<Doreme> with SingleTickerProviderStateMixin {
                           : {back(), now = false};
                     },
                     child: Container(
+                      child: Center(
+                        child: icon,
+                      ),
                       width: 65,
                       height: 65,
                       decoration: BoxDecoration(
